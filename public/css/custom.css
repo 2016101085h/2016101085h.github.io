@@ -1,0 +1,581 @@
+/* CUSTOM CSS HERE */
+body{
+    padding-right:0px!important
+}
+.color-primario{
+    color: #951026;
+    ;
+}
+/* Style the tabs */
+#tabs{
+    margin-top: 90px;
+}
+.tabs {
+    overflow: hidden;
+
+    margin-bottom: -2px;
+    display: flex;
+    justify-content: space-center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.tab-seccion{
+
+
+    order: 1;
+    margin: 0 auto;
+
+}
+@media (min-width: 577px) {
+    .tabs{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tabs input{
+        width: 20%!important;
+        margin: 0!important;
+    }
+    .tab-seccion{
+        order: 0;
+        margin: 0;
+    }
+    .titulo-seccion::after{
+        top: -7px!important;
+    }
+}
+.tabs input{
+    width: 90%;
+    margin: 25px auto;
+
+}
+
+
+.tabs ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.tabs a {
+    float: left;
+    cursor: pointer;
+    padding: 12px 24px;
+    transition: background-color 0.2s;
+    border: 1px solid #e1e1e1;
+    border-right: none;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.tabs a:last-child {
+    border-right: 1px solid #e1e1e1;
+}
+
+/* Change background color of tabs on hover */
+.tabs a:hover {
+    background-color: #565656;
+    color: #fff;
+}
+
+/* Styling for active tab */
+.tabs a.active {
+    background-color: #22171417;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    cursor: default;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 30px 0;
+    /* border: 1px solid #e1e1e1; */
+    border-radius: 10px;
+    /* box-shadow: 3px 3px 6px #e1e1e1; */
+    max-width: 1500px;
+}
+
+
+/****MIS ESTILOS**/
+
+.titulo-seccion{
+    font-size: 50px!important;
+    text-transform: uppercase;
+    color: rgb(149, 16, 38);
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+      margin-bottom: 55px;
+}
+.titulo-seccion::after{
+    content: '';
+    display: block;
+    background-image: url(../img/separador1.png);
+    height: 158px;
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.main_title p{
+    margin-top: 58px!important ;
+}
+
+.size-sociales-f {
+    width: 3.5rem;
+    margin-right: 15px;
+
+}
+
+
+/* carta */
+.carta{
+    background-image: linear-gradient(rgba(39, 38, 38, 0.507), rgba(27, 26, 26, 0.596)),url(../img/Carta/fondo-carta.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.modal-popup {
+    padding: 45px 0;
+}
+.popup-form {
+
+    margin: 10px auto;
+}
+
+
+.widget{
+   position: fixed;
+
+   overflow: hidden;
+
+   left:  12px;
+   bottom: 12px;
+    display: none;
+}
+@media (max-width: 576px) {
+        .widget{
+            display: block;
+        }
+}
+.contenedor-widget{
+ max-width: 72px;
+}
+.widget img{
+    max-width: 100%;
+
+
+}
+
+
+/*carta pedido*/
+
+.carta-pedido{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+        align-items: flex-end;
+}
+.carta-pedido .button{
+    margin-bottom: 0;
+    border-radius: 6px;
+    padding: 10px 18px;
+
+}
+.info-plato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.info-plato p, .info-plato h3{
+    margin:0 0 10px 0;
+    font-size: 30px;
+
+}
+.info-plato p{
+    margin-bottom: 0;
+}
+.info-plato h3{
+    text-transform: uppercase;
+    color: #951026;
+    font-weight: bold;
+}
+.pedido-sopa-entrada{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.label-pedido{
+    font-size: 18px;
+    font-weight: bold;
+}
+.comentario-pedido textarea{
+    margin-top: 10px;
+    padding: 10px;
+
+}
+.comentario-pedido textarea:focus{
+    border-color: #951026;
+    outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+        0 0 8px rgba(114, 47, 47, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+        0 0 8px rgba(114, 47, 47, 0.6);
+
+}
+.input-pedido:focus{
+    border-color: #951026;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+    0 0 8px rgba(114, 47, 47, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+    0 0 8px rgba(114, 47, 47, 0.6);
+}
+
+.cantidad-pedido a{
+        border: none;
+        background: transparent;
+        font-size: 45px;
+
+}
+.cantidad-pedido a i{
+    font-weight: bold;
+}
+.boton-cantidad{
+    display: flex;
+    align-items: center;
+}
+.boton-cantidad input{
+        text-align: center;
+        border: none;
+        background: transparent;
+        font-size: 25px;
+
+}
+.boton-pedido button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton-pedido span{
+    margin-right: 14px;
+}
+.boton-pedido button i{
+    font-size: 27px;
+}
+
+.modal-pedido {
+    top: 30rem;
+    left: 9rem;
+    height: 520px;
+    width: 80%;
+     overflow: auto;
+}
+
+@media (min-width: 577px) {
+    .modal-pedido {
+        top: 28rem;
+        left: 560px;
+        height: 620px;
+    }
+}
+
+@media (min-width: 768px) {
+    .boton-pedido {
+        flex-direction: column;
+    }
+    .modal-pedido{
+        top: 30rem;
+        left: 200px;
+    }
+    .modal-body{
+            height: 430px;
+    }
+    .info-plato{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1777px) {
+    .modal-pedido {
+        left: 750px;
+        top: 30rem;
+        height: 800px;
+    }
+
+    .detalle_lista {
+        height: 130px;
+        padding: 25px 0 15px 0;
+        position: absolute;
+        top: 46px;
+        left: 1px;
+    }
+
+    .img_lista {
+        border-radius: 0 !important;
+    }
+
+    .body-pedido {
+        height: 620px;
+        max-height: 620px !important;
+    }
+}
+
+.titulo-pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    font-size: 25px;
+    opacity: 1;
+}
+
+.img_lista {
+    min-height: 140px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.detalle_lista {
+    height: 35px;
+    padding: 0;
+    font-size: 30px;
+    background: #e1e1e1;
+}
+@media (min-width: 767px) {
+    .detalle_lista{
+        background: transparent;
+        position: absolute;
+        top: 45px;
+        right: 15px;
+    }
+}
+.pedido_lista {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    align-items: center;
+}
+
+.pedido_lista p {
+
+    color: #000;
+
+}
+
+.pedido_lista h3 {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.boton-pedido a {
+    font-size: 35px;
+}
+
+/**Box pedido */
+.box-pedido {
+    background: #fff;
+    -webkit-box-shadow: 6px 5px 19px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 5px 19px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 5px 19px -5px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    border-radius: 6px;
+
+}
+
+.body-pedido {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.total-pedido {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.boton-pedido-procesar {
+    border-radius: 6px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+
+/***BG CARTA DIA ***/
+
+.carta-dia{
+    background-image: linear-gradient(rgba(31, 30, 30, 0.691),rgba(27, 27, 27, 0.829)), url(../img/Carta/bg_carta_dia.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.servicios_bg{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.76),rgba(211, 210, 210, 0.876)),url(../img/gallery/bg_5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/**CONTACTO****/
+
+.contacto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.719)), url(../img/contacto/contacto1.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+.contactanos{
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(10, 10, 10, 0.397)),url(../img/contacto/bg_contacto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_bg_init{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.856),rgba(246, 242, 242, 0.938)),url(../img/gallery/bg_7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.733),rgba(255, 251, 251, 0.931)),url(../img/gallery/bg_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.info_about{
+    background-image: radial-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.657)),url(../img/gallery/bg_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.mision{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@media (min-width: 1200px) {
+    .mision {
+        flex-direction: row;
+    }
+}
+@media (min-width: 1777px) {
+    .mision{
+        flex-direction: row;
+    }
+}
+.box_mision_vision{
+    width: 80%;margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 30px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 10px;
+        border: 2px solid #f3f5f8;
+        position: relative;
+        transition: all .5s ease-in-out;
+}
+.box_mision_vision h4{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.box_mision_vision p{
+    color: #fff;
+
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        color: #fff;
+        background-color: #951026d8;
+        height: 570px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -597px;
+        padding: 50px;
+        font-size: 25px;
+
+    transition: all .5s ease-in-out .3s;
+
+}
+.box_mision_vision:hover p{
+       display: flex;
+       transition: all .5s ease-in-out .3s;
+       bottom: -19px;
+       height: 338px;
+
+}
+@media (min-width: 1200px) {
+    .box_mision_vision:hover p {
+
+        bottom: -19px;
+        height: 386px;
+
+    }
+}
+
+  /* .swal2-popup {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.39),rgba(250, 250, 250, 0.507)), url(../img/gallery/base.png) !important;
+      background-size: 300px !important;
+      background-repeat: no-repeat;
+      background-position: center center !important;
+      color: #fff!important;
+
+  } */
+
+  .sub_header.bg_4{
+      background-image: url(../img/gallery/bg_carta.png);
+      background-size: cover;
+      background-position: center center;
+
+  }
+
+
+  .modalInicio{
+      min-height: 600px;
+      max-width: 505px;
+      background-image: url(../img/gallery/bg_entrada.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .modal-open .modal {
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: #0000009e;
+  }
+  .boton-cerrar{
+
+          padding: 10px 18px!important;
+          color: #fff;
+          font-size: 49px;
+
+  }
+.component-fade-enter-active,
+.component-fade-leave-active {
+    transition: opacity .3s ease;
+}
+
+.component-fade-enter,
+.component-fade-leave-to
+
+/* .component-fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+}

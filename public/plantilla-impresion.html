@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link
+           href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&family=Open+Sans:wght@700&display=swap"
+           rel="stylesheet">
+    <title>Document</title>
+
+</head>
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+          font-family:"Baloo Paaji 2", Arial, sans-serif;
+    }
+
+    table {
+        border-collapse: collapse;
+
+    }
+
+    table>tr {
+        vertical-align: middle;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        background-color: transparent;
+    }
+
+    .table-bordered {
+        border: 1px solid #dee2e6;
+
+    }
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #dee2e6;
+    }
+    .modal-body{
+        border:1px solid #e1e1e1;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .bg-secondary,
+    .bg-secondary a {
+        color: #ffffff !important;
+    }
+
+    .bg-secondary {
+        background-color: #6c757d !important;
+    }
+    .nombre-referencia{
+        float: left;
+        width: 50%;
+        text-align: left;
+
+    }
+    .float{
+       clear: both;
+       overflow: hidden
+
+    }
+    .nombre-referencia p {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .fecha{
+        float: right;
+        width: 50%;
+        text-align: left;
+
+    }
+    .fecha p {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .input{
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    img{
+        max-width: 100%;
+    }
+    .p{
+        margin: 0;
+    }
+
+</style>
+
+<body>
+
+    <div class="modal-body">
+            <div class="float">
+                 <div style="float:left; text-align: right;" style="margin: 0;margin-right: 20px;"><img src="img/redes/logo1.png" width="170" alt=""></div>
+                 <div class="">
+                     <p class="p"><b>Direccion: </b> Avenida evitamiento sur #581</p>
+                     <p class="p">El tambo - Huancayo</p>
+                     <p class="p"><b>Celular</b>: 9575874</p>
+                     <p class="p"><b>Email:</b> hercledis12@gmail</p>
+                 </div>
+            </div>
+
+            <div class="float">
+                <div class="nombre-referencia">
+                    <p style="font-weight: bold;text-transform: uppercase">Nombre de referencia</p>
+                    <p class="input"> hola   </p>
+                </div>
+                <div class="fecha">
+                    <div class="">
+                        <p style="font-weight: bold;text-transform: uppercase">Fecha de pedido</p>
+
+                            <p class="input">2020-04-05</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="float">
+                <div class="nombre-referencia">
+                    <p style="font-weight: bold;text-transform: uppercase">Numero de celular</p>
+                    <p class="input"> hola   </p>
+                </div>
+                <div class="fecha">
+                    <div class="">
+                        <p style="font-weight: bold;text-transform: uppercase">tipo de pago</p>
+
+                            <p class="input">2020-04-05</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h2 style="font-weight: bold;text-transform: uppercase;">Detalles del pedido</h2>
+
+        <table class="table table-bordered  " border="1">
+            <tr class="bg-secondary">
+                <th>#</th>
+                <th>Plato de comida</th>
+                <th>Tipo</th>
+                <th>Entrada o sopa</th>
+                <th>Comentario</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th class="">Subtotal</th>
+            </tr>
+
+            <tr class="bg-light">
+                <td colspan="7" style="text-align: center;">Total</td>
+                <td class="">S/ asasas</td>
+            </tr>
+
+
+
+        </table>
+
+
+    </div>
+</body>
+
+</html>
